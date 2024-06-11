@@ -9,4 +9,44 @@
     <title>Event Registration</title>
 </head>
 <body>
+    <!-- Event Registration Form -->
+    <form id="registrationForm">
+        <!-- Registrant's Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Registrant's Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Event Date Selection -->
+        <label for="eventDate">Event Date:</label>
+        <select id="eventDate" name="eventDate" required>
+            <option value="">Select a date</option>
+            <option value="2024-07-01">July 1, 2024</option>
+            <option value="2024-07-15">July 15, 2024</option>
+            <option value="2024-08-01">August 1, 2024</option>
+        </select><br><br>
+
+        <!-- Meal Preferences -->
+        <label>Meal Preference:</label><br>
+        <input type="checkbox" id="vegetarian" name="preference" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="nonVegetarian" name="preference" value="Non-Vegetarian">
+        <label for="nonVegetarian">Non-Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="preference" value="Vegan">
+        <label for="vegan">Vegan</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Registration Details Display Area -->
+    <div id="displayArea"></div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
   

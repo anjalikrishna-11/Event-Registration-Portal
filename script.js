@@ -17,4 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please fill out all fields and select at least one preference.'); // Alert if any field is empty
             return;
         }
+        // Create a div to display registration details
+        const details = document.createElement('div');
+        details.innerHTML = `
+            <h3>Registration Details:</h3>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Event Date:</strong> ${eventDate}</p>
+            <p><strong>Preferences:</strong> ${preferences.join(', ')}</p>
+            <hr>
+        `;
+
+        // Append the details to the display area
+        displayArea.appendChild(details);
+
+        // Reset the form fields
+        form.reset();
+    });
+});
       
